@@ -13,26 +13,6 @@ func _ready():
 	else:
 		posterior = 1
 	
-#	$CanvasLayer/Popup/AcceptDialog
-	
-#	"python e melhor que java"
-#	k1b3g9s4l4m9  w1  n8w1o6s4l4i5  j2f5w1  q2z7e7z7
-	
-#	"maconha"
-#	n8z7y3l4m9s4z7
-	
-#	"aokigahara"
-#	z7l4p3r6z7s4z7i5z7
-	
-#	"sim"
-#	h7r6n8
-	
-	# Melhor que o que
-	# n8w1o6s4l4i5  j2f5w1  l4  j2f5w1
-	
-	# python e melhor
-	# k1b3g9s4l4m9  w1  n8w1o6s4l4i5
-	
 	if get_parent().name == "main":
 		$CanvasLayer/depois.hide()
 		$CanvasLayer/input.hide()
@@ -41,7 +21,6 @@ func _ready():
 		$CanvasLayer/fase.hide()
 		$CanvasLayer/titulo.hide()
 		$CanvasLayer/enigma.hide()
-#		$CanvasLayer/Popup/AcceptDialog.hide()
 		pass
 	if get_parent().name.begins_with("pag"):
 		$CanvasLayer/start.hide()
@@ -53,20 +32,16 @@ func _ready():
 		$CanvasLayer/dicaAberta.hide()
 		$CanvasLayer/fase.hide()
 		$CanvasLayer/titulo.hide()
-#		$CanvasLayer/enigma.hide()
-#		$CanvasLayer/Popup/AcceptDialog.hide()
 		$CanvasLayer/start.hide()
-	
 	pass 
 
 func _on_depois_pressed():
 	if entrada.to_lower() == pilha.stack_key.topo.get_atual():
-#		if posterior > 0:
-			pilha.stack_main_aux.add(pilha.stack_main.topo.get_atual())
-			pilha.stack_main.desempilhar()
-			pilha.stack_key_aux.add(pilha.stack_key.topo.get_atual())
-			pilha.stack_key.desempilhar()
-			get_tree().change_scene(pilha.stack_main.topo.get_atual())
+		pilha.stack_main_aux.add(pilha.stack_main.topo.get_atual())
+		pilha.stack_main.desempilhar()
+		pilha.stack_key_aux.add(pilha.stack_key.topo.get_atual())
+		pilha.stack_key.desempilhar()
+		get_tree().change_scene(pilha.stack_main.topo.get_atual())
 	else:
 		if get_parent().name == "pag_links":
 			if entrada == "k1b3g9s4l4m9  w1  n8w1o6s4l4i5":
@@ -79,7 +54,6 @@ func _on_depois_pressed():
 		else:
 				$CanvasLayer/Popup/Panel/Label.set_text("Resposta errada.")
 				$CanvasLayer/Popup.show()
-#				$CanvasLayer/Popup/Label2.show()
 	pass # Replace with function body.
 
 func _on_atualiza_pressed():

@@ -6,7 +6,6 @@
 [node name="creditos" type="Node"]
 
 [node name="Control" parent="." instance=ExtResource( 1 )]
-editor/display_folded = true
 
 [node name="titulo" type="Label" parent="Control"]
 margin_left = 170.0
@@ -18,39 +17,40 @@ text = "CRÉDITOS:"
 align = 1
 
 [node name="devs" type="Label" parent="Control"]
-margin_left = 130.0
-margin_top = 170.0
-margin_right = 326.0
-margin_bottom = 269.0
+margin_left = 132.0
+margin_top = 205.0
+margin_right = 328.0
+margin_bottom = 321.0
 rect_scale = Vector2( 1.5, 1.5 )
-text = "Idealizado e desenvolvido por:
+text = "Idealizado e desenvolvido 
+por (GitHub user):
 
-Alex \"Murasaki\" Tavares
-Rafaella Almeida Medeiros.
+@Alex-Murasaki;
+@Hafshe.
 
 ------"
 align = 1
 
 [node name="tools" type="Label" parent="Control"]
-margin_left = 130.0
-margin_top = 340.0
-margin_right = 326.0
-margin_bottom = 422.0
+margin_left = 132.0
+margin_top = 393.0
+margin_right = 328.0
+margin_bottom = 509.0
 rect_scale = Vector2( 1.5, 1.5 )
 text = "Softwares utilizados:
 
-Godot Engine
-GIMP
-Android Studio
+Godot Engine;
+GIMP;
+Android Studio.
 
 -----"
 align = 1
 
 [node name="objetive" type="Label" parent="Control"]
-margin_left = 130.0
-margin_top = 534.0
-margin_right = 323.0
-margin_bottom = 641.0
+margin_left = 132.0
+margin_top = 587.0
+margin_right = 325.0
+margin_bottom = 694.0
 rect_scale = Vector2( 1.5, 1.5 )
 text = "Motivação:
 
@@ -89,6 +89,9 @@ visible = false
 visible = false
 
 [node name="dicaAberta" parent="botoesTouch/CanvasLayer" index="7"]
+visible = false
+
+[node name="Popup" parent="botoesTouch/CanvasLayer" index="8"]
 visible = false
 
 [editable path="botoesTouch"]

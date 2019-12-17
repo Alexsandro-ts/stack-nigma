@@ -22,7 +22,6 @@ class Pilha:
 		return topo
 	
 	func set_topo(val):
-#		print('val ',val)
 		topo = val
 	
 	func get_qtd_elementos():
