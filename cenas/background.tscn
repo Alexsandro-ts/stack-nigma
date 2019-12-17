@@ -1,0 +1,15 @@
+[gd_scene format=2]
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -300.0
+margin_top = -220.0
+margin_right = 1060.0
+margin_bottom = 1070.0
+color = Color( 0.141176, 0.0470588, 0.184314, 1 )

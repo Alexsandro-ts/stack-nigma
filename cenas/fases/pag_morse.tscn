@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://cenas/background.tscn" type="PackedScene" id=1]
+[ext_resource path="res://cenas/botoes_touch.tscn" type="PackedScene" id=2]
+
+[node name="pag_morse" type="Node"]
+
+[node name="background" parent="." instance=ExtResource( 1 )]
+light_mask = 2
+
+[node name="botoesTouch" parent="." instance=ExtResource( 2 )]
+
+[node name="input" parent="botoesTouch/CanvasLayer" index="2"]
+margin_left = -127.0
+margin_right = 113.0
+
+[node name="menu" parent="botoesTouch/CanvasLayer" index="3"]
+position = Vector2( 460, 10 )
+
+[node name="fase" parent="botoesTouch/CanvasLayer" index="4"]
+text = "3."
+
+[node name="titulo" parent="botoesTouch/CanvasLayer" index="5"]
+margin_left = 62.0
+margin_right = 334.0
+rect_scale = Vector2( 1.5, 2 )
+text = "Impressão minha ou ficou difícil do nada??"
+
+[node name="enigma" parent="botoesTouch/CanvasLayer" index="6"]
+margin_left = 112.0
+margin_top = 379.0
+margin_right = 333.0
+margin_bottom = 529.0
+text = ".-..--.-  .---.-.-  .--.-..-  .---.-..  .--.----
+.---..--  ..-.....  .--....-  ..-.....  .--...--
+.--.----  .--.---.  .--.-...  .--..-.-  .--...--
+.--..-.-  .--.--.-  ..-.....  .--.----  .--.---.
+.--..-..  .--..-.-  ..-.....  .--.---.  ---...--
+.--.----  ..-.....  .--.-...  ---....-  ..-.....
+.--....-  .--.--..  .--.-..-  .--.--.-  .--..-.-
+.--.---.  .---.-..  .--.----  .---..--"
+align = 0
+
+[node name="dicaAberta" parent="botoesTouch/CanvasLayer" index="7"]
+margin_left = 90.0
+margin_top = 279.0
+margin_right = 342.0
+margin_bottom = 310.0
+text = "O que você vê aqui?
+Eu vejo zero pontos e apenas um traço."
+
+[editable path="botoesTouch"]
+
+[editable path="botoesTouch/CanvasLayer/Popup"]
